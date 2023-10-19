@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotacionAlrededorDelSol : MonoBehaviour
+public class RotacionAlrededorDeLaTierra : MonoBehaviour
 {
-    public Transform sun;
+    public Transform earth; 
     public float orbitSpeed = 10.0f;  
-    public float distanceFromSun = 10.0f;  
+    public float distanceFromEarth = 10.0f;  
 
     private float orbitAngle = 0.0f;
 
@@ -16,7 +16,7 @@ public class RotacionAlrededorDelSol : MonoBehaviour
         orbitAngle %= 360.0f;
 
         float radians = orbitAngle * Mathf.Deg2Rad;
-        Vector3 newPosition = new Vector3(Mathf.Cos(radians) * distanceFromSun, 0, Mathf.Sin(radians) * distanceFromSun);
-        transform.position = sun.position + newPosition;
+        Vector3 newPosition = new Vector3(Mathf.Cos(radians) * distanceFromEarth, 0, Mathf.Sin(radians) * distanceFromEarth);
+        transform.position = earth.position + newPosition;
     }
 }

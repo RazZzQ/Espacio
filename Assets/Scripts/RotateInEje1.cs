@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotacionSol : MonoBehaviour
+public class RotateInEje1 : MonoBehaviour
 {
-    public float rotationSpeed = 10.0f; 
+    public float rotationSpeed = 20.0f; 
 
     void Update()
     {
